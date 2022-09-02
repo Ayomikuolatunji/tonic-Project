@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const OurMembers: React.FC = () => {
   return (
@@ -13,20 +14,38 @@ const OurMembers: React.FC = () => {
           <div className="flex sm:justify-between flex-wrap justify-center  text-center">
             <div className="block">
               <h1 className="text-[#4FE9A4] text-[96px]">
-                <CountUp end={120} className="w-full" />
+                <CountUp end={120} redraw={false}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
                 <span>m</span>
               </h1>
               <p className="text-[#F1F1F1] text-[24px]">Cool feature title</p>
             </div>
             <div className="block">
-              <h1 className="text-[#4FE9A4] text-[96px]">
-                <CountUp end={10.0} decimal={"."} decimals={3} />
+              <h1 className="text-[rgb(79,233,164)] text-[96px]">
+                <CountUp end={10.0} decimal={"."} decimals={3}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
               </h1>
               <p className="text-[#F1F1F1] text-[24px]">Cool feature title</p>
             </div>
             <div className="block">
               <h1 className="text-[#4FE9A4] text-[96px]">
-                <CountUp end={240} />
+                <CountUp end={240} redraw={false}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
               </h1>
               <p className="text-[#F1F1F1] text-[24px]">Cool feature title</p>
             </div>
