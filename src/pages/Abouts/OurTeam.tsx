@@ -1,7 +1,17 @@
-import React from 'react'
+import React from "react";
 
-export default function OurTeam() {
+const OurTeam: React.FC = () => {
   return (
-    <div>OurTeam</div>
-  )
-}
+    <div className="w-[50%] mx-auto">
+      <h1 className="text-[#777777]">Our team</h1>
+      <p className="text-[#000000]">The leadership team</p>
+      <p className="text-[#777777]">
+        Conversion angel investor entrepreneur first mover advantage. Handshake
+        infographic mass market crowdfunding iteration. Traction stock user
+        experience deployment beta innovator incubator focus.
+      </p>
+    </div>
+  );
+};
+
+export default OurTeam;

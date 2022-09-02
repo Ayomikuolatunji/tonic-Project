@@ -7,7 +7,7 @@ import img5 from "../../assets/Rectangle 1274.png";
 
 export default function ImageCards() {
   return (
-    <div className="grid grid-cols-3 gap-4 w-[70%] mx-auto">
+    <div className="grid grid-cols-3 gap-4 w-[70%] mx-auto -mt-12">
       <div className="row-span-2 flex  flex-col mx-auto">
         <img src={img2} alt="img2" />
       </div>
