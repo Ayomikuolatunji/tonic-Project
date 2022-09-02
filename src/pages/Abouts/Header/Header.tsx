@@ -24,7 +24,18 @@ export default function Header() {
             onClick={() => setNavOpen(!navOpen)}
           />
         </div>
-        {/* desktop and mobile */}
+        {/* desktop */}
+        <ul className={`sm:flex items-center hidden`}>
+          {navItems.map((item) => (
+            <li className="sm:mx-5 my-5 text-[#FFFFFF] font-[600] sm:text-[16px] text-[25px]">
+              <Link to={item.path}>{item.item}</Link>
+            </li>
+          ))}
+          <li className="bg-[#FFFFFF] text-[#0A2640] sm:rounded-[24px] py-3 px-8 cursor-pointer sm:my-0 my-5">
+            Log In
+          </li>
+        </ul>
+        {/* mobile */}
         <ul
           className={`flex items-center ${
             navOpen

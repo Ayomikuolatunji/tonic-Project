@@ -5,11 +5,11 @@ import img3 from "../../assets/Rectangle 1272.png";
 import img4 from "../../assets/Rectangle 1273.png";
 import img5 from "../../assets/Rectangle 1274.png";
 
-export default function ImageCards() {
+const ImageCards:React.FC=()=>{
   return (
     <div className="grid grid-cols-3 gap-4 sm:w-[70%] w-full mx-auto -mt-12">
       <div className="sm:row-span-2 col-span-full sm:col-span-1 flex flex-col mx-auto">
-        <img src={img2} alt="img2" />
+        <img src={img2} alt="img2" className="sm:p-0 px-4" />
       </div>
       <div className="sm:row-span-2  sm:col-span-1 col-span-full  flex justify-start flex-col">
         <img
@@ -38,3 +38,5 @@ export default function ImageCards() {
     </div>
   );
 }
+
+export default ImageCards

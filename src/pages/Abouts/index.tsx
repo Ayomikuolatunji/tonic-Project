@@ -15,8 +15,8 @@ const AboutScreen: React.FC = () => {
       <OurStory />
       <OurMembers />
       <OurTeam />
-      <OurValues/>
-      <Register/>
+      <OurValues />
+      <Register />
     </div>
   );
 };

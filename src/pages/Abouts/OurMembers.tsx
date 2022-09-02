@@ -13,7 +13,7 @@ const OurMembers: React.FC = () => {
           <div className="flex sm:justify-between flex-wrap justify-center  text-center">
             <div className="block">
               <h1 className="text-[#4FE9A4] text-[96px]">
-                <CountUp end={120} className="w-full"/>
+                <CountUp end={120} className="w-full" />
                 <span>m</span>
               </h1>
               <p className="text-[#F1F1F1] text-[24px]">Cool feature title</p>
