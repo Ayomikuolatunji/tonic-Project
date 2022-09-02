@@ -7,25 +7,32 @@ import img5 from "../../assets/Rectangle 1274.png";
 
 export default function ImageCards() {
   return (
-    <div className="grid grid-cols-3 gap-4 w-[70%] mx-auto -mt-12">
-      <div className="row-span-2 flex  flex-col mx-auto">
+    <div className="grid grid-cols-3 gap-4 sm:w-[70%] w-full mx-auto -mt-12">
+      <div className="sm:row-span-2 col-span-full sm:col-span-1 flex flex-col mx-auto">
         <img src={img2} alt="img2" />
       </div>
-      <div className="row-span-2 flex justify-start flex-col">
-      <img src={img3} alt="img4" className="w-[300px] h-[285px] mx-auto" />
+      <div className="sm:row-span-2  sm:col-span-1 col-span-full  flex justify-start flex-col">
+        <img
+          src={img3}
+          alt="img4"
+          className="sm:w-[300px] w-full sm:h-[285px] mx-auto  sm:p-0 px-4"
+        />
         <img
           src={img5}
           alt="img3"
-          className="w-[300px] h-[285px] mx-auto mt-10"
+          className="w-[300px] h-[285px] mx-auto mt-10 sm:block hidden"
         />
-        
       </div>
-      <div className="row-start-1 row-end-4 flex justify-start flex-col">
-        <img src={img1} alt="img1" className="w-[300px] h-[285px] mx-auto" />
+      <div className="sm:row-start-1 sm:row-end-4 sm:col-span-1 col-span-full flex justify-start flex-col sm:p-0 px-4">
+        <img
+          src={img1}
+          alt="img1"
+          className="sm:w-[300px] w-full sm:h-[285px] mx-auto"
+        />
         <img
           src={img4}
           alt="img5"
-          className="w-[300px] h-[285px] mx-auto mt-10"
+          className="w-[300px] h-[285px] mx-auto mt-10 sm:block hidden"
         />
       </div>
     </div>

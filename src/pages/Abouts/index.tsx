@@ -4,6 +4,8 @@ import ImageCards from "./ImageCards";
 import OurMembers from "./OurMembers";
 import OurStory from "./OurStory";
 import OurTeam from "./OurTeam";
+import OurValues from "./OurValues";
+import Register from "./Register";
 
 const AboutScreen: React.FC = () => {
   return (
@@ -13,6 +15,8 @@ const AboutScreen: React.FC = () => {
       <OurStory />
       <OurMembers />
       <OurTeam />
+      <OurValues/>
+      <Register/>
     </div>
   );
 };
