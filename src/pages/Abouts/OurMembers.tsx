@@ -27,7 +27,7 @@ const OurMembers: React.FC = () => {
             </div>
             <div className="block">
               <h1 className="text-[rgb(79,233,164)] text-[96px]">
-                <CountUp end={10.0} decimal={"."} decimals={3}>
+                <CountUp end={10} decimal={"."} decimals={3}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
                       <span ref={countUpRef} />

@@ -17,11 +17,11 @@ const OurValues = () => {
           Handshake infographic mass market crowdfunding iteration. Traction
           stock user experience deployment beta innovator incubator focus.
         </p>
-        <div className="horizontal-cards mt-16 w-full">
-          <div className="flex">
-            <img src={committedImg} alt="" className="w-[150px] sm:h-[150px]" />
-            <div className="Content ml-8">
-              <h1 className="text-[#FFFFFF] leading-[48px] text-[28px]">
+        <div className="horizontal-cards mt-16 w-full flex flex-col sm:gap-y-6 gap-12">
+          <div className="flex sm:flex-row flex-col items-center">
+            <img src={committedImg} alt="" className="sm:w-[150px] w-[250px] sm:h-[150px]" />
+            <div className="sm:ml-8 sm:text-left text-center">
+              <h1 className="text-[#FFFFFF] sm:leading-[48px] text-[28px] sm:mt-0 mt-3 font-bold">
                 We are commited.
               </h1>
               <p className="text-[#F1F1F1] text-[20px]">
@@ -30,10 +30,10 @@ const OurValues = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-16">
-            <img src={responsibleImg} alt="" className="w-[150px] sm:h-[150px]" />
-            <div className="Content ml-8">
-              <h1 className="text-[#FFFFFF] leading-[48px] text-[28px]">
+          <div className="flex sm:flex-row flex-col items-center">
+            <img src={responsibleImg} alt="" className="sm:w-[150px] w-[250px] sm:h-[150px]"/>
+            <div className="sm:ml-8 sm:text-left text-center">
+              <h1 className="text-[#FFFFFF] sm:leading-[48px] text-[28px] sm:mt-0 mt-3 font-bold">
                 We are responsible.
               </h1>
               <p className="text-[#F1F1F1] text-[20px]">
@@ -42,10 +42,10 @@ const OurValues = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-16">
-            <img src={committedImg} alt="" className="w-[150px] sm:h-[150px]" />
-            <div className="Content ml-8">
-              <h1 className="text-[#FFFFFF] leading-[48px] text-[28px]">
+          <div className="flex sm:flex-row flex-col items-center">
+            <img src={committedImg} alt="" className="sm:w-[150px] w-[250px] sm:h-[150px]" />
+            <div className="sm:ml-8 sm:text-left text-center">
+              <h1 className="text-[#FFFFFF] sm:leading-[48px] text-[28px] sm:mt-0 mt-3 font-bold">
                 We aim for progress.
               </h1>
               <p className="text-[#F1F1F1] text-[20px]">
